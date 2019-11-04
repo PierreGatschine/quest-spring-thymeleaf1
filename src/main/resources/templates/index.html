@@ -8,13 +8,13 @@
 <body>
 
 <header th:replace="header.html :: top"> Your header here </header>
-<form method="get" action="doctor">
+<form method="get" th:action="@{/doctor}">
     <fieldset>
         <label for="name">Your doctor's name: </label>
-        <input id="name" name="name" type="text" placeholder="Toto Delavega">
+        <input id="name" name="name" type="text" placeholder="Toto Legrosnigaud">
         <hr>
         <label for="number">Your doctor's number: </label>
-        <input id="number" name="number" type="number" placeholder="0">
+        <input id="number" name="number" type="number" placeholder="13">
         <hr>
         <input type="submit" value="Sign In">
     </fieldset>

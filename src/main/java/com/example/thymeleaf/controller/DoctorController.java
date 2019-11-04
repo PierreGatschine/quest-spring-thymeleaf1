@@ -10,7 +10,7 @@ public class DoctorController {
 
 	@GetMapping("/doctor")
     public String doctor(Model model,
-            @RequestParam(value="name", required=false, defaultValue="Toto Delavega") 
+            @RequestParam(value="name", required=false, defaultValue="Toto Legrosnigaud") 
     		String name, 
             @RequestParam(value="number", required=false, defaultValue="0") 
     		String number) {
